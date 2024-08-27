@@ -1,6 +1,6 @@
 import pandas as pd
 
-full_data = pd.read_csv(r"C:\Users\Sam\Documents\ML\sp500_repo\SP500_Predictor\full_data.csv")
+full_data = pd.read_csv("full_data.csv")
 full_data_ml = pd.DataFrame(full_data)
 
 X_lagged = full_data_ml[['CPI', 'Unemployment_Rate', 'G10Yield', 'G5Yield', 'G3Yield', 'EURUSD', 'GBPUSD', 'USDCHF', 'USDJPY']]
