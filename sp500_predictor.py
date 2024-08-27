@@ -26,9 +26,11 @@ import streamlit as st
 st.title("S&P 500 Price Predictor")
 
 st.write("""
-This app predicts the **S&P 500** closing price based on various economic indicators.
+This app aims to predict the **S&P 500** closing price on Jan 1st of the following month based on various economic indicators and financial instruments.
 """)
-
+st.write("""
+Made by Sam Darling
+""")
 # User input fields
 CPI = st.number_input('CPI (Consumer Price Index)', value=0.0)
 Unemployment_Rate = st.number_input('Unemployment Rate (%)', value=0.0)
